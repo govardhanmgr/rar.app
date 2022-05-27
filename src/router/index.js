@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import launchPage from './components/launchPage.vue'
-import LdbPage from './components/LdbPage.vue'
-import PadPage from './components/PadPage.vue'
-import ReportPage from './components/ReportPage.vue'
+import { createRouter, createWebHashHistory } from 'vue-router' 
+import launchPage from '../components/launchPage.vue';
+import LdbPage from '../components/LdbPage.vue';
+import PadPage from '../components/PadPage.vue';
+import ReportPage from '../components/ReportPage.vue';
 
 const routes = [
     {

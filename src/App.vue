@@ -1,10 +1,13 @@
 <template>
 <launchPage> </launchPage>
-
+  
 </template>
 
+
 <script>
-import launchPage from './components/launchPage';
+
+import launchPage from './components/launchPage' ;
+
 
 export default {
   
@@ -13,6 +16,7 @@ export default {
     launchPage
   }
 }
+
 </script>
 
 <style>
