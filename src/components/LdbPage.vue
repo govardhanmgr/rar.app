@@ -1,25 +1,55 @@
 <template>
-   <form class="ldb" align="center">
-       
-                <input id="ldb" name="empexpense" type="file">
+  <table align="center">
+    <h2> Select the data you want load </h2>
+  
+  <select name="selection" id="selection" >
+   <option value="Select">Select</option>
+    <option value="Payroll">payroll</option>
+    <option value="Client">Client</option>
+    <option value="Timesheet">Timesheet</option>
+    <option value="Employee expenses">Employee expenses</option>
+    <option value="Employee data">Employee data</option>
+    <option value="Immigration expenses">Immigration expenses</option>
+    <option value="Management expenses">Management expenses</option>
+  </select>
+  <br><br>
+  <input id="ldb" name="empexpense" type="file">
                
-                <input type="button" value="upload" >
+  <input id ="upload" type="button" value="upload" >
                 
-
-    </form>
-
+</table>
+                
 </template>
-
 <script>
-   export default {
-       name:'LdbPage' ,
-   }
+export default{
+    name :'LDBPage',
+}
 </script>
 
-<style>
-.ldb {
-    padding-left: 50%;
 
+<style>
+
+
+
+
+#upload {
+  text-align: center;
+  color: blue;
+
+  background-color: #4011fe; /* Green */
+  border: solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
+.LDB {
+  text-align: center;
+  color: black;
+}
+
 
 </style>

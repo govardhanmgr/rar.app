@@ -1,5 +1,7 @@
 <template>
-   Reporting portal Page reached
+  
+Reprt Page reached
+                
 </template>
 
 

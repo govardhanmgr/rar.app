@@ -1,10 +1,40 @@
 import { createRouter, createWebHashHistory } from 'vue-router' 
 import launchPage from '../components/launchPage.vue';
-import LdbPage from '../components/LdbPage.vue';
+import LDBPage from '../components/LDBPage.vue';
 import PadPage from '../components/PadPage.vue';
 import ReportPage from '../components/ReportPage.vue';
+import DashPage from '../components/DashPage.vue' ;
+import amdPage from '../components/amdPage.vue' ;
+import activeEmplydata from '../components/activeEmplydata.vue' ;
+import employeeData from '../components/employeeData.vue' ;
+import orgnData from '../components/orgnData.vue' ;
 
 const routes = [
+  {
+    path: '/amdPage',
+    name: 'amdPage',
+    component: amdPage
+},
+{
+  path: '/activeEmplydata',
+  name: 'activeEmplydata',
+  component: activeEmplydata
+},
+{
+  path: '/employeeData',
+  name: 'employeeData',
+  component: employeeData
+},
+{
+  path: '/orgnData',
+  name: 'orgnData',
+  component: orgnData
+},
+  {
+    path: '/DashPage',
+    name: 'DashPage',
+    component: DashPage
+},
     {
         path: '/launchPage',
         name: 'launchPage',
@@ -12,9 +42,9 @@ const routes = [
   },
 
   {
-    path: '/LdbPage',
-    name: 'LdbPage',
-    component: LdbPage
+    path: '/LDBPage',
+    name: 'LDBPage',
+    component: LDBPage
   },
 
   {
@@ -33,7 +63,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes : routes
 })
 
 export default router
