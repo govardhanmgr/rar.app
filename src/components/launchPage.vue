@@ -1,37 +1,32 @@
 <template>
-<div>
-    <button class="logo">
-        
-        <img width="190px"  src="../assets/logo.png" alt="company logo">
-     </button>
-        
-    <img class="profile" width="70px" height="70px" align="right" src="../assets/profile.png" alt="profile">
-
-   
+<div id="top">
+<img width="200" height="75" src="@/assets/logo.png" alt="" align="left" id="top">
+<div id="profi" align="right">
+<img width="60" height="60" src="@/assets/profile.png" alt="" id="profile" align="center">
+    <table align="right" id="prof">
+        <tr><td><label>Lahari Kolipara</label></td></tr>
+        <tr><td><label>Admin</label></td></tr>
+    </table>
 </div>
-
-<div>
-<form> 
+</div>
+<form class="left"> 
     <table class="lt" align="left">
     <tr>
         <td>
-            <button class="left">Dashboard</button>
+            <router-link to="/DashPage"><button class="left">Dashboard</button></router-link>
 
         </td>
     </tr>
     <tr>
         <td>  
-            <router-link to="/LdbPage"> <button class="left">Load Data in Batch </button></router-link>
-        
-
+            <router-link to="/LDBPage"> <button class="left">Load Data in Batch </button></router-link>
         </td>
 
     </tr>
     <tr>
         <td>
-            <router-link to="/PadPage"><button class="left">Portal Access for Data Mgmt</button></router-link>
+            <router-link to="/amdPage"><button class="left">Amend Details</button></router-link>
         
-
         </td>
     </tr>
     <tr>
@@ -43,104 +38,21 @@
     <tr>
         <td>
             <button id="log">LogOut</button>
-            <router-view/>
+           
    
         </td>
         
     </tr>
 
+    </table>
+  
+    <div id="otpt">
+      <router-view/>
+    </div>
+
     
-
-    </table>
-
-    <table id="rep" align="right" >
-        <tr class="rep" >
-            
-                <td>
-                    <button class="rep1">
-                        Total Active Employee Count
-                    </button>
-                </td>
-                <td>
-                    <button class="rep2">
-                        22
-                    </button>
-                </td>
-        </tr>
-        
-
-        <tr class="rep">
-            <td>
-                <button class="rep1">
-                Outstanding Receivable Collections
-                </button>
-            </td>
-            <td>
-                <button class="rep2">
-                1.2 M
-                </button>
-            </td>
-        </tr>
-
-
-        
-        <tr class="rep">
-                <td>
-                    <button class="rep1">
-                    Payroll Expense YTD
-                    </button>
-                </td>
-                <td>
-                    <button class="rep2">
-                    4.8 M
-                    </button>
-                </td>
-        </tr>
-
-
-        <tr class="rep">
-            <td>
-                <button class="rep1">
-                Employee Expense Non Deductable YTD
-                </button>
-            </td>
-            <td>
-                <button class="rep2">
-                4.2 M
-                </button>
-            </td>
-        </tr>
-
-
-        <tr class="rep">
-            <td>
-                <button class="rep1">
-                Management Expense YTD
-                </button>
-            </td>
-            <td>
-                <button class="rep2">
-                128 K
-                </button>
-            </td>
-        </tr>
-
-        <tr class="rep">
-            <td>
-                <button class="rep1">
-                Operational Cost YTD
-                </button>
-            </td>
-            <td>
-                <button class="rep2">
-                68 K
-                </button>
-            </td>
-        </tr>
-
-    </table>
 </form>
-</div>  
+
 </template>
 <script>
 export default {
@@ -148,7 +60,9 @@ export default {
 }
 </script>
 <style>
-button.logo {
+
+
+.logo {
     cursor: pointer;
     
 }
@@ -160,33 +74,39 @@ button#log {
     border: 10px;
     border-radius: 15px;
     cursor: pointer;
-    border-color: rgb(225, 79, 79);
     opacity: 0.9px;
-    width: 150px;
-    margin-top: 150px;
+    width: 200px;
+    margin-top: 180px;
     margin-bottom: 15px;
+    position: fixed;
 }
+
 button.left {
     background-color: rgb(134, 255, 255);
-    font-size: medium;
+    font-size: large;
     color: rgb(2, 2, 2);
     padding: 1px 20px;
+    padding-bottom: 10px;
     margin: 1px 0px ;
+    margin-bottom: 2px;
     border: 2px solid;
     border-radius: 15px;
     cursor: pointer;
     border-color: rgb(0, 0, 0);
-    width: 150px;
-    height: 70px;
+    width: 200px;
+    height: 80px;
     opacity: 0.9px;
 }
+
 .lt {
     display: inline-table ;
-    padding-top: 30px;
+    padding-top: 25px;
+    position: fixed;
     
 
 }
-form {
+
+form.left {
     width:100%;
     padding-top: 0;
     padding-right: 0px;
@@ -200,63 +120,35 @@ form {
 
 }
 
-.profile {
-    padding-right: 0px;
-    padding-top: 10px;
-    margin-right: 30px;
-}
+ 
 
-table#rep {
-    display: inline-table ;
-    padding-top: 30px;
-    font-size: large;
-    font-style: normal;
-    border: 3px solid;
-    border-color: black;
-    border-radius: 10px;
-    padding-right:0px;
-    table-layout: auto;
-    margin-top: 30px;
-    margin-right: 50px;
 
-    
-}
+#otpt {
+    margin-top: 50px;
+    margin-left: 10px;
 
-tr.rep {
-    padding: 10px;
-
-   
-    
-}
-
-button.rep1 {
-    background-color: hwb(0 100% 0%);
-    font-size: medium;
-    color: #000000;
-    padding: 20px 20px;
-    margin: 1px 5px ;
-    border-radius: 15px;
-    cursor: pointer;
-    outline-color: transparent;
-    
+    border-left: 100%;
 
 }
 
-button.rep2 {
-    background-color: hwb(0 100% 0%);
-    font-size: medium;
-    color: #000000;
-    padding: 20px 20px;
-    margin: 1px 5px ;
-    border-radius: 15px;
-    cursor: pointer;
-    outline-color: transparent;
-    width: 100px
-    
-
+#profile {
+    margin-right: 0px;
+    position: static;
 }
 
+table#prof {
+    padding-left: 20px;
+    margin-left: 0px;
+}
 
+img#top {
+    position: fixed;
+    margin-left: 20px;
+}
+
+div#profi {
+    margin-right: 40px;
+}
 
 
 </style>

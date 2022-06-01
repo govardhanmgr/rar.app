@@ -1,9 +1,11 @@
 <template>
     <table id ="amd" align="center">
         <tr>
-            <td> <route-link to="/activeEmplydata"><button class='amd'> Active employee data </button> </route-link></td>
+            <td> <nav> <route-link to="/activeEmplydata"><button class='amd'> Active employee data </button> </route-link></nav></td>
             <td> <route-link to="/orgnData"><button class='amd'>  Organization data </button></route-link></td>
         </tr></table>
+        <router-view/>
+
 </template>
 
 <script>

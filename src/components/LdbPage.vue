@@ -1,6 +1,6 @@
 <template>
-  <table align="center">
-    <h2> Select the data you want load </h2>
+  <table align="center" id="LDB">
+    <h1> Select the data you want load </h1>
   
   <select name="selection" id="selection" >
    <option value="Select">Select</option>
@@ -15,7 +15,7 @@
   <br><br>
   <input id="ldb" name="empexpense" type="file">
                
-  <input id ="upload" type="button" value="upload" >
+  <input id ="upload" type="button" value="Upload" >
                 
 </table>
                 
@@ -32,21 +32,21 @@ export default{
 
 
 
-#upload {
+input#upload {
   text-align: center;
   color: blue;
 
-  background-color: #4011fe; /* Green */
+  background-color: #4011fe; 
   border: solid white;
   border-radius: 10px;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: solid;
   display: inline-block;
   font-size: 16px;
 }
-.LDB {
+table.LDB {
   text-align: center;
   color: black;
 }

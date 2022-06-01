@@ -60,7 +60,8 @@
             <td> <button> view </button></td>
             <td> <button> edit </button></td>
         </tr>  
-    </table>  
+    </table> 
+
 </template>
 
 <script>

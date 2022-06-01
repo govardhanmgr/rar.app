@@ -1,6 +1,6 @@
 <template>
   
-Reprt Page reached
+<h1> Page reached</h1>
                 
 </template>
 

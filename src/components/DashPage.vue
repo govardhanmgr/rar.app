@@ -6,7 +6,7 @@
             
                 <td>
                     <button class="rep1">
-                        Total Active Employee Count
+                        Total Active Employee
                     </button>
                 </td>
                 <td>
@@ -101,7 +101,7 @@
  table#rep {
     display: inline-table ;
     padding: 10px;
-    font-size: large;
+    font-size: medium;
     font-style: normal;
     border: 3px solid;
     border-color: black;
@@ -111,6 +111,7 @@
     margin-top: 0px;
     margin-right: 50px;
     margin-bottom: 10px;
+    background-color:hsla(0, 95%, 92%, 0.478);
 
     
 }
@@ -123,28 +124,30 @@ tr.rep {
 }
 
 button.rep1 {
-    background-color: hwb(0 100% 0%);
-    font-size: medium;
+    background-color:hsla(0, 95%, 92%, 0.425);
+    font-size: large;
     color: black;
     padding: 20px 20px;
     margin: 1px 5px ;
+    border: solid hsla(0, 95%, 92%, 0.478);
     border-radius: 15px;
     cursor: pointer;
-    outline-color: transparent;
-    width: 340px;
+    width: 380px;
+    opacity: 0.9px;
+    text-align: left;
     
 
 }
 
 button.rep2 {
-    background-color: hwb(0 100% 0%);
+    background-color:hsla(0, 95%, 92%, 0.478);
     font-size: medium;
     color: #000000;
     padding: 20px 20px;
     margin: 1px 5px ;
+    border: solid hsla(0, 95%, 92%, 0.478);
     border-radius: 15px;
     cursor: pointer;
-    outline-color: transparent;
     width: 100px
     
 
